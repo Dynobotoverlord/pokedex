@@ -26,8 +26,10 @@ $(()=>{
             $('#pokeName').html(data.forms[0].name);
             $('#type').html(data.types[0].type.name);
             $('#dex').html(data.id)
+            $('#ability').html(data.abilities[0].ability.name)
             $('#pokeImage').attr("src",data.sprites.other["official-artwork"].front_default)
            
+
             if (data.types[0].type.name == 'normal'){
                 $('#background').css("background-color","#aaaa99")
             }
